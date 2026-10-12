@@ -43,7 +43,7 @@
 
 > 需要 Python 依赖：`openai`、`httpx`（KiraAI 本体已依赖，一般无需额外安装）
 >
-> **版本兼容**：适配 KiraAI `v2.32.0` 最新 OpenAI 官方 Provider（含 STT 语音转写支持）；旧版本（`v2.29.7`+）也能跑，STT 不可用时自动降级。
+> **版本兼容**：适配 KiraAI `v2.32.0` 最新 OpenAI 官方 Provider（含 STT 语音转写支持）；旧版本（`v2.29.7`+）也能跑，STT 不可用时自动降级。兼容 **3.0 全系列**（含 v3.0.0-rc.1：公共客户端已迁至 `core.provider.openai_compatible`，v1.1.1 起导入走候选链自动适配，不绑版本号）。
 >
 > **升级自 v1.0.x**：`schema.json` 已改为插件配置页描述，Provider 表单字段迁移到 `provider-schema.json`。插件启动时会自动回退读取旧布局，但建议直接使用本仓库最新文件（四个文件一起替换）。
 
